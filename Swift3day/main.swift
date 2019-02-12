@@ -88,3 +88,57 @@ print("Simple Interest with default value of year: ",si(amount: 1000, rate: 2.5)
 
 
 print("Simple Interest with deafulat values of amounts and year: ",si(rate: 2.0))
+
+
+
+
+
+print("----------*,/,%------------")
+
+func mul(a: Float, b: Float) -> Float
+{
+    let c = a * b;
+    return c;
+}
+
+print("multiplication result: ", mul(a: 10.0, b: 20.0))
+
+
+func div(_ a: Float, b: Float) -> Float
+{
+    let c = a / b;
+    return c;
+}
+
+print("division result: ", div( 10.0, b: 20.0))
+
+
+func mod(a: Float, b: Float) -> Float
+{
+    let c = a.truncatingRemainder(dividingBy: b)
+    return c;
+}
+
+print("modulus result: ", mod(a: 10.0, b: 6.0))
+
+
+/*
+ Return reverse of given Integer (N)
+ Input : n = 23454  Output = 45432
+ Input : n = 346798 Output = 897643
+*/
+
+
+func reverse(n: Int) -> Int
+{
+ var number = n
+ var reverse = 0
+    while number != 0
+    {
+        reverse = (reverse * 10) + (number % 10)
+        number = Int(number / 10)
+    }
+    return reverse
+}
+
+print("Reverse of Number: ",reverse(n: 23454))
