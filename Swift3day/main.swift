@@ -142,3 +142,56 @@ func reverse(n: Int) -> Int
 }
 
 print("Reverse of Number: ",reverse(n: 23454))
+
+
+print("--------------------Recursion-------------------------")
+
+func display(n: Int) -> Int
+{
+    if n == 0
+    {
+        return 0
+    }
+    print(n)
+    return display(n: n - 1)
+}
+
+display(n: 5)
+
+print("Print numbers in ascending order")
+func asc(n: Int)
+{
+    if n != 0
+    {
+        asc(n: n - 1)
+        print(n)
+    }
+}
+
+asc(n: 5)
+
+
+func display1(n: Int) -> Int
+{
+    if n == 0
+    {
+        return 0
+    }
+    else
+    {
+        return n + display1(n: n - 1)
+    }
+}
+
+print("Sum Recursion: ", display1(n: 5))
+
+
+
+//BINARY TO DECIMAL
+//Input - 1111 Output - 15
+//Input - 1010 Output - 10
+
+print("----------------BINARY TO DECIMAL CONVERSION-------------------")
+
+
+
